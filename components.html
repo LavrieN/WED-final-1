@@ -7,10 +7,12 @@
   <title>Components</title>
   <!-- You will need to link to the CSS file -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
+  <img class="headerImg" src="images/mechanism-design.webp">
   <header>
     <nav>
       <ul>
@@ -19,45 +21,106 @@
         <li><a href="components.html">Components</a></li>
       </ul>
     </nav>
-    <h1>Some simple Components</h1>
   </header>
   <main id="main-content" tabindex="-1">
-    <div class="grid">
-      <hgroup>
-      <h4>Gears</h4>
-      <p>A gear or gearwheel, also called a toothed wheel, is a rotating machine part typically used to transmit rotational motion or torque by means of a series of "teeth" that engage with compatible teeth of another gear or other part. The teeth can be integral saliences or cavities machined on the part, or separate pegs inserted into it. In the latter case, the gear is usually called a cogwheel. A cog may be one of those pegs or the whole gear. Two or more meshing gears are called a gear train.</p>
+    <h1>Some simple Components</h1>
+    <div id="imgTwo">
+      <div id="image">
+      </div>
+      <hgroup id="textTwo"">
+      <p id="text">Hover over an image below to display here.</p>  
+      <p id="picContent"> Picture's content go here.</p>
       </hgroup>
-      <img src="https://www.pngkey.com/png/full/74-740903_gears-simple-machines-gears-clipart.png" width="50%" alt="picture of 3 gears meshed together">
-      <hgroup>
-        <h4>Chain</h4>
-        <p>A chain drive is a way of transmitting mechanical power from one place to another. It is often used to convey power to the wheels of a vehicle, particularly bicycles and motorcycles. It is also used in a wide variety of machines besides vehicles.</p>
-      </hgroup>
-      <img src="https://i.pinimg.com/736x/d8/a8/78/d8a87832ac8e6a7ad0494f9d9968310d.jpg" width="50%" alt="">
-      <hgroup>
-        <h4>Belts</h4>
-        <p>A belt is a loop of flexible material used to link two or more rotating shafts mechanically, most often parallel. Belts may be used as a source of motion, to transmit power efficiently or to track relative movement. Belts are looped over pulleys and may have a twist between the pulleys, and the shafts need not be parallel.</p>
-      </hgroup>
-      <img src="https://ibtinc.com/wp-content/uploads/2025/12/Driven-Pulley-diagram-cropped.png" width="50%" alt="">
-      <hgroup>
-        <h4>Sprocket</h4>
-        <p>A sprocket, sprocket-wheel or chainwheel is a profiled wheel with teeth that mesh with a chain, rack or other perforated or indented material. The name 'sprocket' applies generally to any wheel upon which radial projections engage a chain passing over it. It is distinguished from a gear in that sprockets are never meshed together directly, and differs from a pulley in that sprockets have teeth and pulleys are smooth except for timing pulleys used with toothed belts.</p>
-      </hgroup>
-      <img src="https://ohiorollerchain.com/wp-content/uploads/2025/12/types-of-sprockets-1000x667.webp" width="50%" alt="">
-      <hgroup>
-        <h4>Cam</h4>
-        <p>A cam is a rotating or sliding piece in a mechanical linkage used especially in transforming rotary motion into linear motion. It is often a part of a rotating wheel (e.g. an eccentric wheel) or shaft (e.g. a cylinder with an irregular shape) that strikes a lever at one or more points on its circular path.</p>
-      </hgroup>
-      <img src="https://www.mathworks.com/help/simscape/ref/ab_pb_cam_schem1.png" width="50%" alt="">
-
-
-
-
+      
     </div>
+    
+
+    <section class="gallery">
+      <img id="pic1" 
+        class="section"
+        src="images/spur-gear.jpg" 
+        alt="Spur gear"
+        title="Spur gear is the most basic gear it is used to tranfer motion to another component not limited to gear."
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+            
+      <img id="pic2" 
+        class="section"
+        src="images/helical-gear.jpg" 
+        alt="Helical Gear"
+        title="Helical gear is similar to spur gear but with its teeth angled, it was created to sovle the wear created when two gear mesh into each other."
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+            
+      <img id="pic3" 
+        class="section"
+        src="images/straight-bevel-gear.jpg" 
+        alt="Straight bevel Gear"
+        title="Bevel gear is designed to tranfer motion and torque at an angle usually 45°"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+            
+      <img id="pic4" 
+        class="section"
+        src="images/spiral-bevel-gear.jpg" 
+        alt="Spiral bevel Gear"
+        title="spiral bevel gear is a specific type of bevel gear with curved, angled teeth that engage gradually for smooth, quiet, and high-torque power transmission. But is harder to produce as a result."
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+
+      <img id="pic5" 
+        class="section"
+        src="images/internal-gear.jpg" 
+        alt="internal Gear"
+        title="An internal gear is a cylindrical gear with teeth cut on its inner surface rather than the outside."
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+
+      <img id="pic6" 
+        class="section"
+        src="images/worm-gear.jpg" 
+        alt="Ratchet and claw"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+
+      <img id="pic7" 
+        class="section"
+        src="images/worm-wheel.jpg" 
+        alt="Worm wheel"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+
+      <img id="pic8" 
+        class="section"
+        src="images/ratchet.jpg" 
+        alt="Ratchet and claw"
+        onmouseover="upDate(this)"
+        onmouseout="undo()"
+        onclick="upDateDefaultPic(this)">
+
+
+
+    </section>
+
+
+
   </main>
   <footer>
-    <p>Created by <a href="https://github.com/LavrieN">me</a>. Do not presents as own.</p>
+    <p>Personal contact. </p>
+    <hgroup class="footer">
+      <p class="link"> <a href="https://github.com/LavrieN" target="_blank"> <i class="fa fa-github" style="font-size:50px"></i></a> </p>
+      <p class="clickableElement"  role="button" tabindex="0" onclick=gmailCopy()> <i class="fa fa-envelope " style="font-size:50px"></i> </p>
+    </hgroup>
+    
   </footer>
 
 </body>
-
+<script src=".Js/script.js"></script>
 </html>
