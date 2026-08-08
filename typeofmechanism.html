@@ -25,18 +25,24 @@
 
   <main id="main-content" tabindex="-1">
     <h1>A few types of Mechanisms</h1>
-    <div class="grid ">
+    <div class="grid">
       <hgroup>
       <h4> Spatial mechanisms</h4>
       <p>A mechanism  which a body moves through a general spatial movement is called a spatial mechanism. </p>
       </hgroup>
-      <img src="https://www.researchgate.net/publication/309180541/figure/fig3/AS:504120995835904@1497203219770/Analyzed-spatial-mechanism.png" width="50%" alt="Analyzed spatial mechanism" class="referenceimg">
-      
+      <div class="column">
+      <img src="images/Analyzed-spatial-mechanism.jpg" width="50%" alt="Analyzed spatial mechanism" class="referenceimg" onclick="openModal();currentSlide(1)">
+      </div>
+
       <hgroup>
         <h4>Cam and follower mechanisms</h4>
         <p>A cam and follower mechanism is formed by the direct contact of two specially shaped links. The driving link is called the cam and the link that is driven through the direct contact of their surfaces is called the follower. The shape of the contacting surfaces of the cam and follower determines the movement of the mechanism. </p>
       </hgroup>
-      <img src="https://mr-iitkgp.vlabs.ac.in/exp/cam-follower-mechanism/images/cam%20mechanism%20nptel.PNG" alt="IDagram of a cam and a follower" width="50%">
+      <div class="column">
+      <img src="images/cam mechanism nptel.png" alt="Dagram of a cam and a follower" width="50%" onclick="openModal();currentSlide(2)">
+      <img src="images/cammechanism2.png" alt="Dagram of a cam and a follower" width="50%" onclick="openModal();currentSlide(3)">  
+      </div>
+      
 
       <hgroup>
         <h4>Gears and gear trains</h4>
@@ -48,8 +54,66 @@
        
 
       </hgroup>
-      <img src="https://khkgears.net/new/images/gear-trains/Fig.-2.3-Two-Stage-Gear-Train.jpg" alt="diagram of 3 gear of 3 different sizes linked to each other" width="50%">
+
+      <div class="column">
+      <img src="images/gear-train.jpg" alt="diagram of 3 gear of 3 different sizes linked to each other" width="50%" onclick="openModal();currentSlide(4)">  
+      </div>
+      
     </div>
+
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/Analyzed-spatial-mechanism.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/cam mechanism nptel.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/cammechanism2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/gear-train.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls
+    <div class="column">
+      <img class="demo" src="images/Analyzed-spatial-mechanism.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/cam mechanism nptel.png" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/cammechanism2.png" width="10%" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/gear-train.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div> -->
+  </div>
+</div>
+
+
   </main>
   <footer>
     <p>Personal contact. </p>
